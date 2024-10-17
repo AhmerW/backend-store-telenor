@@ -3,6 +3,7 @@ if __name__ == "__main__":
 
     from core.settings import DEV_SETTINGS
     from server import app
+    app = app
 
     uvicorn.run(
         "server:app",
